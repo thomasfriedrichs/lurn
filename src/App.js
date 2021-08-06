@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Login from './context/Login';
 import MoviePage from './context/MoviePage';
 import UserContext from './context/userContext';
 
@@ -20,6 +21,7 @@ class App extends Component {
       >
         <div>
           <MoviePage/>
+          <Login/>
         </div>
       </UserContext.Provider> 
     );
