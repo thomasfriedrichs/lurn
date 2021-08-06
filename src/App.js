@@ -3,6 +3,9 @@ import MoviePage from './context/MoviePage';
 import UserContext from './context/userContext';
 
 class App extends Component {
+  handleLoggedIn = username => {
+    console.log();
+  }
   state = { currentUser: { name: "Thomas" }};
 
   render() {
