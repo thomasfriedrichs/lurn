@@ -6,9 +6,11 @@ class MovieList extends Component {
   render() {
     return (
       <UserContext.Consumer>
-        <div>
-          Movie List
-        </div>
+        { userContext => 
+          <div>
+            Movie List
+          </div>
+        } 
       </UserContext.Consumer>
     );
   }
