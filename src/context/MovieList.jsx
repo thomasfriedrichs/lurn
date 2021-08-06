@@ -5,9 +5,11 @@ import UserContext from './userContext';
 class MovieList extends Component {
   render() {
     return (
-      <div>
-        Movie List
-      </div>
+      <UserContext.Consumer>
+        <div>
+          Movie List
+        </div>
+      </UserContext.Consumer>
     );
   }
 }

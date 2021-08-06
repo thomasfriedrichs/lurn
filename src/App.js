@@ -7,11 +7,11 @@ class App extends Component {
 
   render() {
     return (
-      <UserContext>
+      <UserContext.Provider value={this.state.currentUser}>
         <div>
           <MoviePage/>
         </div>
-      </UserContext>
+      </UserContext.Provider> 
     );
   }
 }
