@@ -8,7 +8,7 @@ class MovieList extends Component {
       <UserContext.Consumer>
         { userContext => 
           <div>
-            Movie List
+            Movie List {userContext.name}
           </div>
         } 
       </UserContext.Consumer>
