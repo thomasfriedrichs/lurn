@@ -1,14 +1,16 @@
-// import Movie from './hoc/Movie';
+import React, { Component } from 'react';
 import Users from './hooks/Users';
 
-function App() {
-  return (
-    // <Movie id={1} />
-    <div>
-      <p>Hello World</p>
-      <Users/>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      <div>
+        <p>Hello World</p>
+        <Users/>
+      </div>
+    );
+  }
 }
 
 export default App;
