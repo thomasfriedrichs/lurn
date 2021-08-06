@@ -16,4 +16,5 @@ class MovieList extends Component {
   }
 }
 
+MovieList.contextType = UserContext;
 export default MovieList;
