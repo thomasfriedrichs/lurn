@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import UserContext from './userContext'
 
-function MoviePage(props) {
+function MovieRow(props) {
   const currentUser = useContext(UserContext);
   console.log("context", currentUser);
 
@@ -12,4 +12,4 @@ function MoviePage(props) {
   );
 }
 
-export default MoviePage;
+export default MovieRow;
