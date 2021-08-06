@@ -7,7 +7,7 @@ function MovieRow(props) {
 
   return (
     <div>
-      {currentUser.name}
+      Movie Row {currentUser.name}
     </div>
   );
 }
