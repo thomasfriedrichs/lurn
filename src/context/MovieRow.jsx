@@ -7,7 +7,7 @@ function MovieRow(props) {
 
   return (
     <div>
-      Movie Row {currentUser.name}
+      Movie Row {UserContext.currentUser ? UserContext.currentUser.name : ''}
     </div>
   );
 }
