@@ -2,10 +2,10 @@ import React, { useContext} from 'react';
 import UserContext from './userContext';
 
 function Login(props) {
-  const UserContext = useContext(UserContext);
+  const userContext = useContext(UserContext);
   return (
     <div>
-      <button onClick={}>Login</button>
+      <button onClick={() => userContext.onLoggedIn}>Login</button>
     </div>
   );
 }
