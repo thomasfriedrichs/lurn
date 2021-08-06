@@ -8,7 +8,7 @@ class App extends Component {
     const user = { name: 'Thomas' };
     this.state({ currentUser: user})
   }
-  state = { currentUser: { name: "Thomas" }};
+  state = { currentUser: null};
 
   render() {
     return (
