@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import Users from './hooks/Users';
+import MoviePage from './context/MoviePage';
+import UserContext from './context/userContext';
 
 class App extends Component {
   state = { currentUser: { name: "Thomas" }};
 
   render() {
     return (
-      <div>
-        <p>Hello World</p>
-        <Users/>
-      </div>
+      <UserContext>
+        <div>
+          <MoviePage/>
+        </div>
+      </UserContext>
     );
   }
 }
