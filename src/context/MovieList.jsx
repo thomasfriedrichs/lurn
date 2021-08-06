@@ -3,6 +3,10 @@ import UserContext from './userContext';
 
 
 class MovieList extends Component {
+  componentDidMount() {
+    console.log('context', this.context)
+  };
+
   render() {
     return (
       <UserContext.Consumer>
