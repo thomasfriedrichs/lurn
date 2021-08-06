@@ -4,7 +4,9 @@ import UserContext from './context/userContext';
 
 class App extends Component {
   handleLoggedIn = username => {
-    console.log();
+    console.log("getting the user:" + username);
+    const user = { name: 'Thomas' };
+    this.state({ currentUser: user})
   }
   state = { currentUser: { name: "Thomas" }};
 
