@@ -2,12 +2,11 @@ import React, {useContext} from 'react';
 import UserContext from './userContext'
 
 function MovieRow(props) {
-  const currentUser = useContext(UserContext);
-  console.log("context", currentUser);
+  const userContext = useContext(UserContext);
 
   return (
     <div>
-      Movie Row {UserContext.currentUser ? UserContext.currentUser.name : ''}
+      Movie Row {userContext.currentUser ? userContext.currentUser.name : ''}
     </div>
   );
 }
